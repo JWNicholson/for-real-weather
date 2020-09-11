@@ -51,21 +51,10 @@ const [main, setMain] = useState('');
     }
     console.log(main)
     return (
-        <div>
+        <div className={styles.weatherWrapper}>
            <h2>Current Weather Conditions</h2>
-            <div>
-              
-                <Conditions
-                  error={error}
-                  loading={loading}
-                  status={currWthr.cod}
-                  name={currWthr.name}
-                  temp={main.temp}
-                  feels_like={main.feels_like}_
-                />
-                
-            </div>
-       
+            <div >
+
             <form onSubmit={getCurrWthr}>
                 <input
                     type="text"
@@ -101,6 +90,19 @@ const [main, setMain] = useState('');
                 <button type="submit" className={styles.Button}>Get Forecast</button>
 
             </form>
+              
+                <Conditions
+                  error={error}
+                  loading={loading}
+                  status={currWthr.cod}
+                  name={currWthr.name}
+                  temp={main.temp}
+                  feels_like={main.feels_like}_
+                />
+                
+            </div>
+       
+           
 
         </div>
     )
