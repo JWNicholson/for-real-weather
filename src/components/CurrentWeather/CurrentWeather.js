@@ -1,6 +1,7 @@
 import React, { useState} from 'react';
 import axios from 'axios';
 import Conditions from '../Conditions/Conditions';
+import classes from '*.module.css';
 
 const CurrentWeather = () => {
 
@@ -48,6 +49,7 @@ const [main, setMain] = useState('');
             <form onSubmit={getCurrWthr}>
                 <input
                     type="text"
+                    className={classes.textInput}
                     placeholder="Enter City"
                     maxLength="50"
                     value={city}
@@ -57,6 +59,7 @@ const [main, setMain] = useState('');
                     <input
                         type="radio"
                         name="units"
+                        className={classes.radio}
                         checked={unit === "imperial"}
                         value="imperial"
                         onChange={(e) => setUnit(e.target.value)}
@@ -67,6 +70,7 @@ const [main, setMain] = useState('');
                     <input
                         type="radio"
                         name="units"
+                        className={classes.radio}
                         checked={unit === "metric"}
                         value="metric"
                         onChange={(e) => setUnit(e.target.value)}
@@ -77,7 +81,7 @@ const [main, setMain] = useState('');
                 <button type="submit">Get Forecast</button>
 
             </form>
-            
+
         </div>
     )
 }
