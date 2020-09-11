@@ -95,6 +95,7 @@ const [main, setMain] = useState('');
                   error={error}
                   loading={loading}
                   status={currWthr.cod}
+                  unit={unit}
                   name={currWthr.name}
                   temp={main.temp}
                   feels_like={main.feels_like}_
