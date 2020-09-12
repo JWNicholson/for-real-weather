@@ -20,6 +20,8 @@ const [loading, setLoading] = useState(false);
 const [currWthr, setCurrWthr] = useState({});
 const [main, setMain] = useState('');
 const [weather, setWeather] = useState([]);
+const [wind, setWind] = useState({});
+const [sys, setSys] = useState({});
 
 
     function getCurrWthr(e) {
@@ -38,12 +40,14 @@ const [weather, setWeather] = useState([]);
         axios
             .get(`${BASE_URL}q=${city}&units=${unit}&appid=${KEY}`)
                 .then((response) => {
-                        //console.log("Response: ", response.data.cod)
+                        console.log("Response: ", response.data)
                         console.log("Weather: ", response.data.weather[0].icon)
                         setCurrWthr(response.data);
                         // OpenWeather returns a multi-nested JSON object with arrays and objects within. The following is the only way I found so far to get nested elements into props
                         setMain(response.data.main);
                         setWeather(response.data.weather[0]);
+                        setWind(response.data.wind)
+                        setSys(response.data.sys)
                         
                         setLoading(false);
                 })
@@ -56,7 +60,7 @@ const [weather, setWeather] = useState([]);
     return (
         
         <div className={styles.weatherWrapper}>
-           <h2>Current Weather Conditions</h2>
+           <h2>Current Weather</h2>
             <div >
             <form onSubmit={getCurrWthr}>
                 <input
@@ -95,19 +99,30 @@ const [weather, setWeather] = useState([]);
                 <Conditions
                   error={error}
                   loading={loading}
-                  status={currWthr.cod}
                   unit={unit}
+
+                  status={currWthr.cod}
                   name={currWthr.name}
+
                   temp={main.temp}
                   feels_like={main.feels_like}
+                  low_temp={main.temp_min}
+                  hi_temp={main.temp_max}
+                  humidity={main.humidity}
+
                   weather_icon={weather.icon}
                   main_weather={weather.main}
+                  description={weather.description}
+
+                  wind_speed={wind.speed}
+                  wind_direction={wind.deg}
+
+                  sunrise={sys.sunrise}
+                  sunset={sys.sunset}
+
                 />
                 
             </div>
-       
-           
-
         </div>
     )
 }
