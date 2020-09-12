@@ -1,14 +1,14 @@
 .App {
-  border:1px solid hotpink;
+  /* border:1px solid hotpink; */
   display:flex;
   flex-direction: column;
   text-align: center;
   min-height: 100vh;
- 
+ margin-top: 64px;
 }
 
 main{
-  border:1px solid green;
+  /* border:1px solid green; */
   flex-grow:1;
   margin:2em auto;
   padding: 1rem;

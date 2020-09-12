@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './Conditions.module.css';
+
 import { TableContainer, Typography, Paper, Table, TableRow, TableCell, TableBody } from '@material-ui/core';
+
 
 const Conditions = (props) => {
 	//console.log("Unit",props.unit)
@@ -8,14 +10,18 @@ const Conditions = (props) => {
 	// console.log("wind speed: ", props.wind_speed)
 	// console.log("wind direction ", props.wind_direction)
 
+	
+
 	return (
+		
 		<div>
+			
 			{props.error && <small className={styles.error}>Enter a valid city.</small>}
 			{props.loading && <div className={styles.Loader} />}
 
 			{props.status === 200 ? (
 				//start table
-            // cheeck if there is a way to eliminate writing props.unit check twice in mui tables
+            // check if there is a way to eliminate writing props.unit check twice in mui tables
 				<div id="startOutput">
 					<Typography variant="h4" component="h3" gutterBottom>
 						{props.name}
@@ -56,8 +62,6 @@ const Conditions = (props) => {
                             :
                             <TableCell align="left">{Math.round(props.wind_speed)}kh</TableCell>
                             }
-
-									
 								</TableRow>
 
 								<TableRow>

@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import Conditions from '../Conditions/Conditions';
 
-import styles from './CurrentWeather.module.css';
-import { Button, FormControl, FormControlLabel, Radio, RadioGroup, TextField, Typography } from '@material-ui/core';
+//import styles from './CurrentWeather.module.css';
+import {Box, Button, FormControl, FormControlLabel, Radio, RadioGroup, TextField, Typography } from '@material-ui/core';
 
 const CurrentWeather = () => {
 	const KEY = process.env.REACT_APP_WTHR_API_KEY;
@@ -84,21 +84,21 @@ const CurrentWeather = () => {
 	}
 
 	return (
-		<div className={styles.weatherWrapper}>
-            <Typography variant="h4" component="h2">
+	<Box m={4}>
+            <Typography variant="h4" component="h2" gutterBottom>
                 Current Weather
             </Typography>
-			
-			
-				<form onSubmit={getCurrWthr}>
+			<Box m={4}>
+			<form onSubmit={getCurrWthr}>
 					<FormControl onSubmit={getCurrWthr}>
+						
 						<TextField
 							id="cityInput"
 							label="Enter city"
 							variant="outlined"
 							onChange={(e) => setCity(e.target.value)}
 						/>
-
+						<Box m={3}>
 						<RadioGroup
 							aria-label="unit"
 							name="unit"
@@ -107,14 +107,14 @@ const CurrentWeather = () => {
 						>
 							<FormControlLabel value="imperial" control={<Radio />} label="F&deg;" />
 							<FormControlLabel value="metric" control={<Radio />} label="C&deg;" />
-						</RadioGroup>
-
+						</RadioGroup >
+						</Box>
 						<Button type="submit" variant="contained" size="small" color="primary">
 							Get Weather
 						</Button>
-					</FormControl>
+						</FormControl>
 				</form>
-
+                </Box>	
 				<Conditions
 					error={error}
 					loading={loading}
@@ -134,7 +134,7 @@ const CurrentWeather = () => {
 					sunrise={sys.sunrise}
 					sunset={sys.sunset}
 				/>
-			</div>
+	</Box>
 		
 	);
 };

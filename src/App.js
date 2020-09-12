@@ -1,20 +1,26 @@
 import React from 'react';
-
-import './App.css';
+import { Card, Container, Paper, Typography } from '@material-ui/core';
+import Header from './components/Header/Header';
 import CurrentWeather from './components/CurrentWeather/CurrentWeather';
+import './App.css';
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        Real Weather
+        <Header />
       </header>
-     <main>
+     <Container maxWidth="sm" >
+       <Card>
        <CurrentWeather />
-     </main>
+       </Card>
+     </Container>
 
       <footer>
-        by John Nicholson
+        <Typography variant="h6">
+          by John Nicholson
+        </Typography>
       </footer>
     </div>
   );
