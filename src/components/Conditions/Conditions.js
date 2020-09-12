@@ -3,9 +3,11 @@ import styles from './Conditions.module.css';
 
 
 
+
+
 const Conditions = (props) => {
 //console.log("Unit",props.unit)
-console.log("Humidity ", props.humidity)
+//console.log("Humidity ", props.humidity)
 // console.log("wind speed: ", props.wind_speed)
 // console.log("wind direction ", props.wind_direction)
 
@@ -42,8 +44,7 @@ console.log("Humidity ", props.humidity)
                <div>
                <img src={"http://openweathermap.org/img/wn/" + props.weather_icon + "@2x.png"} alt="weather icon"/>
                <div>
-               {/* {capitalize_eachWord(capDescription)} */}
-               {/* {props.description} */}
+              
                </div>
                </div>
                 {/* <h6>Response Code is {props.status}</h6> */}
