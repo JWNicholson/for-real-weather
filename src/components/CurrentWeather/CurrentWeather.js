@@ -3,7 +3,7 @@ import axios from 'axios';
 import Conditions from '../Conditions/Conditions';
 
 import styles from './CurrentWeather.module.css';
-import { Button, FormControl, FormControlLabel, GreenRadio, Radio, RadioGroup, TextField } from '@material-ui/core';
+import { Button, FormControl, FormControlLabel, Radio, RadioGroup, TextField, Typography } from '@material-ui/core';
 
 const CurrentWeather = () => {
 	const KEY = process.env.REACT_APP_WTHR_API_KEY;
@@ -85,7 +85,10 @@ const CurrentWeather = () => {
 
 	return (
 		<div className={styles.weatherWrapper}>
-			<h2>Current Weather</h2>
+            <Typography variant="h4" component="h2">
+                Current Weather
+            </Typography>
+			
 			<div>
 				<form onSubmit={getCurrWthr}>
 					<FormControl onSubmit={getCurrWthr}>
