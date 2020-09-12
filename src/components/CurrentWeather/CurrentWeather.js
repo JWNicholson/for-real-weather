@@ -89,7 +89,7 @@ const CurrentWeather = () => {
                 Current Weather
             </Typography>
 			
-			<div>
+			
 				<form onSubmit={getCurrWthr}>
 					<FormControl onSubmit={getCurrWthr}>
 						<TextField
@@ -135,7 +135,7 @@ const CurrentWeather = () => {
 					sunset={sys.sunset}
 				/>
 			</div>
-		</div>
+		
 	);
 };
 

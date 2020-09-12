@@ -1,9 +1,6 @@
-import { Typography } from '@material-ui/core';
 import React from 'react';
 import styles from './Conditions.module.css';
-
-
-
+import { Typography } from '@material-ui/core';
 
 
 const Conditions = (props) => {
@@ -39,7 +36,6 @@ const Conditions = (props) => {
 
               <Typography>
                   <p><strong>Humidity</strong> {Math.round(props.humidity)}%</p>
-
                   <p><strong>Wind</strong> {Math.round(props.wind_speed)}</p>
                   <p><strong>Direction</strong> {Math.round(props.wind_direction)}&deg;</p>
                   <p><strong>Conditions</strong> - {props.main_weather}</p>
@@ -47,9 +43,6 @@ const Conditions = (props) => {
                
                <div>
                <img src={"http://openweathermap.org/img/wn/" + props.weather_icon + "@2x.png"} alt="weather icon"/>
-               <div>
-              
-               </div>
                </div>
                 {/* <h6>Response Code is {props.status}</h6> */}
             </div> : 
