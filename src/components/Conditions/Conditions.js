@@ -2,7 +2,8 @@ import React from 'react';
 import styles from './Conditions.module.css';
 
 const Conditions = (props) => {
-console.log("Unit",props.unit)
+//console.log("Unit",props.unit)
+console.log("main: ", props.weather_main)
     return (
      <div >
      
@@ -24,8 +25,14 @@ console.log("Unit",props.unit)
                     <p><strong>Feels like {Math.round(props.feels_like)} C&deg;</strong></p>
                  </div>
             }
+
+            <div>
+               <p>Conditions: {props.main_weather}</p>
+            </div>
                    
-               
+               <div>
+               <img src={"http://openweathermap.org/img/wn/" + props.weather_icon + "@2x.png"} alt="weather icon"/>
+               </div>
                 
                
                 <h6>Response Code is {props.status}</h6>

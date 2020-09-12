@@ -19,6 +19,7 @@ const [loading, setLoading] = useState(false);
 //data states
 const [currWthr, setCurrWthr] = useState({});
 const [main, setMain] = useState('');
+const [weather, setWeather] = useState([]);
 
 
     function getCurrWthr(e) {
@@ -38,9 +39,11 @@ const [main, setMain] = useState('');
             .get(`${BASE_URL}q=${city}&units=${unit}&appid=${KEY}`)
                 .then((response) => {
                         //console.log("Response: ", response.data.cod)
+                        console.log("Weather: ", response.data.weather[0].icon)
                         setCurrWthr(response.data);
                         // OpenWeather returns a multi-nested JSON object with arrays and objects within. The following is the only way I found so far to get nested elements into props
                         setMain(response.data.main);
+                        setWeather(response.data.weather[0]);
                         
                         setLoading(false);
                 })
@@ -49,12 +52,12 @@ const [main, setMain] = useState('');
                       setLoading(false);
                   });  
     }
-    console.log(main)
+    
     return (
+        
         <div className={styles.weatherWrapper}>
            <h2>Current Weather Conditions</h2>
             <div >
-
             <form onSubmit={getCurrWthr}>
                 <input
                     type="text"
@@ -86,9 +89,7 @@ const [main, setMain] = useState('');
                         />
                     C&deg;
                 </label>
-
                 <button type="submit" className={styles.Button}>Get Forecast</button>
-
             </form>
               
                 <Conditions
@@ -98,7 +99,9 @@ const [main, setMain] = useState('');
                   unit={unit}
                   name={currWthr.name}
                   temp={main.temp}
-                  feels_like={main.feels_like}_
+                  feels_like={main.feels_like}
+                  weather_icon={weather.icon}
+                  main_weather={weather.main}
                 />
                 
             </div>
