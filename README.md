@@ -8,7 +8,11 @@ WHY?
  Due to time constraints I avoided Test Driven Developement for the start of this project.
 
 Build status
-Ongoing - I plan to add features later such as changing the temperature measuremnt radio button to a slider, and dynamically changing backgrounds corresponding to weather data and time of day.
+Ongoing - 
+I plan to add features later such as:    
+    Changing the temperature measuremnt radio button to a slider
+    Converting Wind Direction from degrees to SSE, N, etc. 
+    Dynamically changing backgrounds corresponding to weather data and time of day.
 
 Code example
 The JSON data -
@@ -34,16 +38,17 @@ The JSON data -
  .....
 }
 
-
 Tech stack used-
+React js - https://reactjs.org/docs/getting-started.html
 Bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 Create React App's built in environment variables to protect the API from being loaded to this respositry.
 
 React depencies added-
-    Axios js for the API call
-    Material-UI for styling. 
+    Axios js for the API call. - https://github.com/axios/axios
+    Material-UI for styling. -https://material-ui.com/
 
-Feel free to fork this repo and start learning. After forking and cloning the master branch, run 'npm install' in your command line, to install the dependencies. Then head over to Open Weather Map and get started.
+Feel free to fork this repo and start learning. I am going to asume you know something about React,HTML,and CSS already.
+After forking and cloning the master branch, run 'npm install' in your command line, to install the dependencies. Then head over to Open Weather Map and get started.
 API-https://openweathermap.org/guide
 They have an excellent free plan. Just make an account, subscribe to a data set, and generate your api key. I recommend starting with Current Weather data set - https://openweathermap.org/current. Documentations is on that page.
 
