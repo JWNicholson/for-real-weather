@@ -8,11 +8,10 @@ This project is an app, using Open Weather Map's API JSON to display data in a c
  Due to time constraints I avoided Test Driven Developement for the start of this project.
 
 <h3>Build status -</h3>
-Working & Ongoing.
-I plan to add features later such as:    
-    Changing the temperature measuremnt radio button to a slider
-    Converting Wind Direction from degrees to SSE, N, etc. 
-    Dynamically changing backgrounds corresponding to weather data and time of day.
+Working & Ongoing.I plan to add features later such as:    
+   1. Changing the temperature measuremnt radio button to a slider
+   2. Converting Wind Direction from degrees to SSE, N, etc. 
+   3. Dynamically changing backgrounds corresponding to weather data and time of day.
 
 Code example
 The JSON data -
