@@ -41,13 +41,18 @@ Working & Ongoing.I plan to add features later such as:
     }
 
 <h3>Tech stack used</h3>
-React js - https://reactjs.org/docs/getting-started.html
-Create React - App https://github.com/facebook/create-react-app
-Create React App's built in environment variables to protect the API from being loaded to this respositry.
 
-<h3>React depencies added-</h3>
-Axios js for the API call.- https://github.com/axios/axios.
-Material-UI for styling. -https://material-ui.com/.
+* React js - https://reactjs.org/docs/getting-started.html
+
+* Create React - App https://github.com/facebook/create-react-app
+
+* Create React App's built in environment variables to protect the API from being loaded to this respository.
+
+<h3>React Dependencies Added</h3>
+
+* Axios js for the API call.- https://github.com/axios/axios
+
+* Material-UI for styling. -https://material-ui.com/
     
 <h2></h2>
 Feel free to fork this repo and start learning. I am going to asume you know something about React,HTML,and CSS already.
