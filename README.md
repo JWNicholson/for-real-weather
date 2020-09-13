@@ -2,7 +2,7 @@
 <h1>For Real Weather</h1>
 This project is an app, using Open Weather Map's API JSON to display data in a card.Ultimately, it is an exercise passing props through React components.
 
-![app-example](images\ForRealWeather-2_JWNicholson-sm.jpg) 
+![app-example](https://github.com/JWNicholson/for-real-weather/blob/master/images/ForRealWeather-2_JWNicholson-sm.jpg) 
 
 <h2>WHY?</h2>
 I wanted to build yet another weather app, concentrating on form controlled dynamic data using Material-UI for styling. 
