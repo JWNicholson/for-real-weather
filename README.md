@@ -1,5 +1,5 @@
 
-For Real Weather
+<h1>For Real Weather</h1>
 This project is an app, using Open Weather Map's API JSON to display data in a card.Ultimately, it is an exercise passing props through React components.
 
 WHY?
