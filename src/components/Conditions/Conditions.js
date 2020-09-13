@@ -7,7 +7,7 @@ import { makeStyles } from '@material-ui/styles';
 // Future feature - use day and night styles to change background color of weather icon cell
 ///1. Get location time from response sunrise and sunset times
 ///2. Use JS to convert returned linux UTC formatted data into readable time (need to display)
-///3. In weather icon cell use ternary expression to change cell class based on sunrise/sunset
+///3. In weather icon cell use ternary expression to change cell class based on sunrise/sunset or better,(?) set custom theme colors?
 const useStyles = makeStyles({
 	day: {
 		background:"powderblue"
@@ -17,7 +17,7 @@ const useStyles = makeStyles({
 		background:"#333333"
 	}
 });
-
+///////////////////////////////////////
 
 const Conditions = (props) => {
 	//console.log("Unit",props.unit)

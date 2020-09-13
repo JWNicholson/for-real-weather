@@ -109,7 +109,7 @@ const CurrentWeather = () => {
 							<FormControlLabel value="metric" control={<Radio />} label="C&deg;" />
 						</RadioGroup >
 						</Box>
-						<Button type="submit" variant="contained" size="small" color="primary">
+						<Button type="submit" variant="contained" size="small" color="secondary">
 							Get Weather
 						</Button>
 						</FormControl>
