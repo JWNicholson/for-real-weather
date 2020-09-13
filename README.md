@@ -9,9 +9,9 @@ This project is an app, using Open Weather Map's API JSON to display data in a c
 
 <h3>Build status -</h3>
 Working & Ongoing.I plan to add features later such as:    
-   1. Changing the temperature measuremnt radio button to a slider
-   2. Converting Wind Direction from degrees to SSE, N, etc. 
-   3. Dynamically changing backgrounds corresponding to weather data and time of day.
+   * Changing the temperature measuremnt radio button to a slider
+   * Converting Wind Direction from degrees to SSE, N, etc. 
+   * Dynamically changing backgrounds corresponding to weather data and time of day.
 
 <h3>Example JSON data</h3>
 
@@ -38,17 +38,20 @@ Working & Ongoing.I plan to add features later such as:
     }
 
 <h3>Tech stack used</h3>
-React js - https://reactjs.org/docs/getting-started.html
-Create React - App https://github.com/facebook/create-react-app
-Create React App's built in environment variables to protect the API from being loaded to this respositry.
+*React js - https://reactjs.org/docs/getting-started.html
+*Create React - App https://github.com/facebook/create-react-app
+*Create React App's built in environment variables to protect the API from being loaded to this respositry.
 
 <h3>React depencies added-</h3>
--Axios js for the API call.- https://github.com/axios/axios
--Material-UI for styling. -https://material-ui.com/
+*Axios js for the API call.- https://github.com/axios/axios
+*Material-UI for styling. -https://material-ui.com/
     
 <h2></h2>
 Feel free to fork this repo and start learning. I am going to asume you know something about React,HTML,and CSS already.
+
 After forking and cloning the master branch, run 'npm install' in your command line, to install the dependencies. Then head over to Open Weather Map and get started.
+
 API-https://openweathermap.org/guide
+
 They have an excellent free plan. Just make an account, subscribe to a data set, and generate your api key. I recommend starting with Current Weather data set - https://openweathermap.org/current. Documentations is on that page.
 
