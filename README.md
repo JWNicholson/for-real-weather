@@ -43,7 +43,7 @@ React depencies added-
     Axios js for the API call
     Material-UI for styling. 
 
-Feel free to fork this repo and start learning. After forking and cloning the repo, run npm install in your command line to install the dependencies. Then head over to Open Weather Map and get started.
+Feel free to fork this repo and start learning. After forking and cloning the master branch, run 'npm install' in your command line, to install the dependencies. Then head over to Open Weather Map and get started.
 API-https://openweathermap.org/guide
 They have an excellent free plan. Just make an account, subscribe to a data set, and generate your api key. I recommend starting with Current Weather data set - https://openweathermap.org/current. Documentations is on that page.
 
