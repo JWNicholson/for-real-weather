@@ -2,6 +2,21 @@ import React from 'react';
 import styles from './Conditions.module.css';
 
 import { TableContainer, Typography, Paper, Table, TableRow, TableCell, TableBody } from '@material-ui/core';
+import { makeStyles } from '@material-ui/styles';
+
+// Future feature - use day and night styles to change background color of weather icon cell
+///1. Get location time from response sunrise and sunset times
+///2. Use JS to convert returned linux UTC formatted data into readable time (need to display)
+///3. In weather icon cell use ternary expression to change cell class based on sunrise/sunset
+const useStyles = makeStyles({
+	day: {
+		background:"powderblue"
+	},
+
+	night: {
+		background:"#333333"
+	}
+});
 
 
 const Conditions = (props) => {
@@ -10,7 +25,7 @@ const Conditions = (props) => {
 	// console.log("wind speed: ", props.wind_speed)
 	// console.log("wind direction ", props.wind_direction)
 
-	
+	const classses = useStyles();
 
 	return (
 		
@@ -73,15 +88,13 @@ const Conditions = (props) => {
 									<TableCell>Conditions</TableCell>
 									<TableCell align="left">{props.main_weather}</TableCell>
 								</TableRow>
-
-								
 							</TableBody>
 						</Table>
 
                   <Table>
                      <TableBody>
                      <TableRow>
-									<TableCell align="center">
+									<TableCell align="center"   className={classses.day}>
 										<img
 											src={'http://openweathermap.org/img/wn/' + props.weather_icon + '@2x.png'}
 											alt="weather icon"
