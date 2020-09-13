@@ -1,68 +1,49 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+For Real Weather
+This project is an app, using Open Weather Map's API JSON to display data in a card.Ultimately, it is an exercise passing props through React components.
 
-In the project directory, you can run:
+WHY?
+ I wanted to build yet another weather app, concentrating on form controlled dynamic data using Material-UI for styling. 
+ Working with API's can be fun, they're like a puzzle. Open Weather Map's response has objects that are 2 or more layers deep, sometimes in an array. This makes it good for practing traversing JSON, which can take a little time to get comfortable with.
+ Due to time constraints I avoided Test Driven Developement for the start of this project.
 
-### `yarn start`
+Build status
+Ongoing - I plan to add features later such as changing the temperature measuremnt radio button to a slider, and dynamically changing backgrounds corresponding to weather data and time of day.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Code example
+The JSON data -
+{
+  "coord": {"lon": -122.08,"lat": 37.39},
+  "weather": [
+    {
+      "id": 800,
+      "main": "Clear",
+      "description": "clear sky",
+      "icon": "01d"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 282.55,
+    "feels_like": 281.86,
+    "temp_min": 280.37,
+    "temp_max": 284.26,
+    "pressure": 1023,
+    "humidity": 100
+  },
+ .....
+}
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `yarn test`
+Tech stack used-
+Bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Create React App's built in environment variables to protect the API from being loaded to this respositry.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+React depencies added-
+    Axios js for the API call
+    Material-UI for styling. 
 
-### `yarn build`
+Feel free to fork this repo and start learning. After forking and cloning the repo, run npm install in your command line to install the dependencies. Then head over to Open Weather Map and get started.
+API-https://openweathermap.org/guide
+They have an excellent free plan. Just make an account, subscribe to a data set, and generate your api key. I recommend starting with Current Weather data set - https://openweathermap.org/current. Documentations is on that page.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
