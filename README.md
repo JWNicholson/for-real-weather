@@ -2,6 +2,8 @@
 <h1>For Real Weather</h1>
 This project is an app, using Open Weather Map's API JSON to display data in a card.Ultimately, it is an exercise passing props through React components.
 
+![app-example](images\ForRealWeather-2_JWNicholson-sm.jpg) 
+
 <h2>WHY?</h2>
 I wanted to build yet another weather app, concentrating on form controlled dynamic data using Material-UI for styling. 
 Working with API's can be fun, they're like a puzzle. Open Weather Map's response has objects that are 2 or more layers deep, sometimes in an array. This makes it good for   practing traversing JSON, which can take a little time to get comfortable with.
