@@ -13,29 +13,29 @@ Working & Ongoing.I plan to add features later such as:
    2. Converting Wind Direction from degrees to SSE, N, etc. 
    3. Dynamically changing backgrounds corresponding to weather data and time of day.
 
-Code example
-The JSON data -
-{
-  "coord": {"lon": -122.08,"lat": 37.39},
-  "weather": [
+<h3>Example JSON data</h3>
+
     {
+      "coord": {"lon": -122.08,"lat": 37.39},
+      "weather": [
+     {
       "id": 800,
       "main": "Clear",
       "description": "clear sky",
       "icon": "01d"
     }
-  ],
-  "base": "stations",
-  "main": {
-    "temp": 282.55,
-    "feels_like": 281.86,
-    "temp_min": 280.37,
-    "temp_max": 284.26,
-    "pressure": 1023,
-    "humidity": 100
-  },
- .....
-}
+    ],
+      "base": "stations",
+      "main": {
+        "temp": 282.55,
+        "feels_like": 281.86,
+        "temp_min": 280.37,
+        "temp_max": 284.26,
+        "pressure": 1023,
+        "humidity": 100
+      },
+     .....
+    }
 
 Tech stack used-
 React js - https://reactjs.org/docs/getting-started.html
