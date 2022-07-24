@@ -6,8 +6,8 @@ import Conditions from '../Conditions/Conditions';
 import {Box, Button, FormControl, FormControlLabel, Radio, RadioGroup, TextField, Typography } from '@material-ui/core';
 
 const CurrentWeather = () => {
-	const KEY = process.env.REACT_APP_WTHR_API_KEY;
-	const BASE_URL = process.env.REACT_APP_WTHR_API_BASE_URL;
+	const api_key = 'paste your api key between these quotes';
+	const weather_url = 'https://api.openweathermap.org/data/2.5/weather?';
 
 	//set initial states
 	//url parameters
@@ -64,7 +64,7 @@ const CurrentWeather = () => {
 
 		// api call here
 		axios
-			.get(`${BASE_URL}q=${city}&units=${unit}&appid=${KEY}`)
+			.get(`${website_url}q=${city}&units=${unit}&appid=${api_key}`)
 			.then((response) => {
 				console.log('Response: ', response.data);
 				//console.log("Weather: ", response.data.weather[0].icon)
