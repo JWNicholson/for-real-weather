@@ -60,7 +60,10 @@ Working & Ongoing.I plan to add features later such as:
 <h2></h2>
 Feel free to fork this repo and start learning. I am going to asume you know something about React,HTML,and CSS already.
 
-After forking and cloning the master branch, run 'npm install' in your command line, to install the dependencies. Then head over to Open Weather Map and get started.
+After forking and cloning the master branch: 
+* Run 'npm install' in your command line, to install the dependencies.
+* In CurrentWeather.js, paste your API key between the single quotes in the const api_key.
+* Head over to Open Weather Map and get started. Make sure the API call url hasn't changed. If it has, change the const weather_url accordingly.
 
 API-https://openweathermap.org/guide
 
