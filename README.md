@@ -47,7 +47,7 @@ Working & Ongoing.I plan to add features later such as:
 
 * React js - https://react.dev/
 
-* Create React - App https://github.com/facebook/create-react-app
+* Create React App https://github.com/facebook/create-react-app
 
 * Create React App's built in environment variables to protect the API from being loaded to this respository.
 
