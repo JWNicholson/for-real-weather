@@ -45,7 +45,7 @@ Working & Ongoing.I plan to add features later such as:
 
 <h3>Tech stack used</h3>
 
-* React js - https://reactjs.org/docs/getting-started.html
+* React js - https://react.dev/
 
 * Create React - App https://github.com/facebook/create-react-app
 
